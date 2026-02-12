@@ -5868,9 +5868,6 @@ sub annotate_strain_type_cgMLST
 		 "<", \$enc,
 		 ">", \$out);
     
-    open(L, ">", "/tmp/mlst.out"); 
-    print L $out;
-    close(L);
     if (!$ok)
     {
 	die "Error running cgMLST prediction \n";
